@@ -1,1 +1,22 @@
 // Mixins Here
+.center(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.buttonStyle(@BC, @BO, @CR, @PD, @TA, @TD, @DY, @FS, @BR){
+	background-color: @BC; 
+		  border: @BO;
+		  color: @CR;
+		  padding: @PD;
+		  text-align: @TA;
+		  text-decoration: @TD;
+		  display: @DY;
+		  font-size: @FS;
+		  border-radius: @BR;
+}
+.buttonHover(){
+	background-color: white;
+	color: black;
+	border: 1px black solid;
+}

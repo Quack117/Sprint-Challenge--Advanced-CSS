@@ -58,7 +58,20 @@
       }
 
       .btn {
+//		  background-color: @btn-bg-color; 
+//		  border: none;
+//		  color: white;
+//		  padding: 1rem 2rem;
+//		  text-align: center;
+//		  text-decoration: none;
+//		  display: inline-block;
+//		  font-size: 1.6rem;
+//		  border-radius: .5rem;
+		  .buttonStyle(@btn-bg-color, none, white, .8rem 2rem, center, none, inline-block, 1.6rem, .5rem);
       }
+		.btn:hover {
+			.buttonHover()
+		}
     }
 
     .walk-img {

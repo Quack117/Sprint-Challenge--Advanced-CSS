@@ -1,4 +1,7 @@
 // Home Content
+.mainHeaderPic {
+	border-radius: 1rem;
+}
 
 .home {
 
@@ -18,12 +21,22 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+	  
+	  @media @phone {
+		  .launch, .sky {
+			  display:none;
+		  }
+	  }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+		
+		@media @phone {
+			width: 100%;
+		}
     }
   }
 
@@ -45,12 +58,25 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+	  @media @phone {
+		  .center();
+		  flex-direction: column-reverse;
+		  padding: 0px 0px;
+		  padding-top: 10px;
+		  margin: 20px 2.5%;
+	  }
 
     .walk-text {
       width: 50%;
+		@media @phone {
+			width: 100%;
+		}
 
       h3 {
         margin-bottom: 10px;
+		  @media @phone {
+			  margin-top: 15px;
+		  }
       }
 
       p {
@@ -68,6 +94,11 @@
 //		  font-size: 1.6rem;
 //		  border-radius: .5rem;
 		  .buttonStyle(@btn-bg-color, none, white, .8rem 2rem, center, none, inline-block, 1.6rem, .5rem);
+		  
+		  @media @phone {
+			  .buttonStyle(@btn-bg-color, none, white, 2rem 19rem, center, none, inline-block, 1.6rem, .5rem)
+			 
+		  }
       }
 		.btn:hover {
 			.buttonHover()
@@ -77,6 +108,11 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+		
+		@media @phone {
+			width: 100%;
+			margin-left: 0%;
+		}
       
       img {
         width: 100%;

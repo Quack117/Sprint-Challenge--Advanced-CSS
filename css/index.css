@@ -185,6 +185,9 @@ nav a {
   margin-left: 0.7rem;
   margin-right: 0.7rem;
 }
+nav a:hover {
+  color: blue;
+}
 .navContainer {
   background-color: #f4f4f4;
   padding-top: 1.5rem;
@@ -200,6 +203,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.mainHeaderPic {
+  border-radius: 1rem;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -211,11 +217,22 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .launch,
+  .home .space-images .sky {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -233,11 +250,32 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 0px 0px;
+    padding-top: 10px;
+    margin: 20px 2.5%;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text h3 {
+    margin-top: 15px;
+  }
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
@@ -253,6 +291,19 @@ footer {
   font-size: 1.6rem;
   border-radius: 0.5rem;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    background-color: #22283A;
+    border: none;
+    color: white;
+    padding: 2rem 19rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+  }
+}
 .home .walk .walk-text .btn:hover {
   background-color: white;
   color: black;
@@ -261,6 +312,12 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;

@@ -205,6 +205,8 @@ footer {
 }
 .mainHeaderPic {
   border-radius: 1rem;
+  width: 100%;
+  height: auto;
 }
 .home .intro h2 {
   padding: 15px;
